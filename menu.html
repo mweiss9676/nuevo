@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
         <title>Menu</title>
         <style>
-            
-            @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
 
-
-          * {
-              color: rgb(246, 129, 33);
-          }
           .wrapper {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
@@ -24,62 +21,28 @@
                overflow: hidden; 
           }
 
-          
-          
-          .title {
-              grid-area: title;
-              font-size: 3em;
-              text-align: center;
-              padding-top: 1em;
-              position: relative;
-              bottom: ;
-              font-family: 'Josefin Slab';
-          }
-
-          #home, #menu, #contact-us {
-              padding: 1em;
-          }
-
-          .header {
-              grid-area: header;
-              padding: 0 0 0 2em;
-              font-family: sans-serif;
-          }
-
           .menu {
               padding: 2em;
               text-align: center;
               padding-top: 0;
               font-family: Raleway;
           }
-
+          /*experimenting with different notation below to see if it would work. It didn't... */
           /*#Cazuela, #Puerco, #Gallo, #Salmon, #Vieiras, #Huitlacoche {
               grid-area: content5, content2, content3, content4, content1, content6;
           }*/
 
-          #Cazuela {
-              grid-area: content1;
-          }
+          #Cazuela {grid-area: content1;}
 
-          #Puerco {
-              grid-area: content2;
-          }
+          #Puerco {grid-area: content2;}
 
-          #Gallo {
-              grid-area: content3;
-          }
+          #Gallo {grid-area: content3;}
 
-          #Salmon {
-              grid-area: content4;
-          }
+          #Salmon {grid-area: content4;}
 
-          #Vieiras {
-              grid-area: content5;
-          }
+          #Vieiras {grid-area: content5;}
 
-          #Huitlacoche {
-              grid-area: content6;
-          }
+          #Huitlacoche {grid-area: content6;}
 
           #Cazuela, #Salmon {margin-left: 10em;}
           #Gallo, #Huitlacoche {margin-right: 10em;}
@@ -89,17 +52,7 @@
               font-style: bold;
               font-family: 'Josefin Slab';
           }
-          .footer {
-              grid-area: footer;
-              font-family: sans-serif;
-              text-align: center;
-              padding: 1em 0;
-              margin-top: 10em;
-          }
-
-          hr {
-              border-color: rgb(247, 71, 7);
-          }
+          
         </style>
     </head>
     <body>

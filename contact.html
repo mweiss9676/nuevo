@@ -1,47 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+    <style>
+            .wrapper {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: 
+                   "title title title"
+                   "header header header"
+                   "... form ..."
+                   "footer footer footer";
+               overflow: hidden;
+               background-color: rgba(20, 15, 15, 1);
+             }
 
-            @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
-
-
-          * {
-              color: rgb(246, 129, 33);
-          }
-          .wrapper {
-             display: grid;
-             grid-gap: 10px;
-             grid-template-columns: 1fr 1fr 1fr;
-             grid-template-areas: 
-                "title title title"
-                "header header header"
-                "... form ..."
-                "footer footer footer";
-            overflow: hidden;
-            background-color: rgba(20, 15, 15, 1);
-          }
-
-          .title {
-              grid-area: title;
-              font-size: 3em;
-              text-align: center;
-              padding-top: 1em;
-              position: relative;
-              font-family: 'Josefin Slab';
-          }
-
-          #home, #menu, #contact-us {
-              padding: 1em;
-          }
-
-          .header {
-              grid-area: header;
-              padding: 0 0 0 2em;
-              font-family: sans-serif;
-          }
-
-          .form {
+             .form {
               grid-area: form;
               text-align: right;
               margin-right: 10em;
@@ -49,6 +24,7 @@
               font-family: Raleway;
           }
 
+          
           input, select, option, textarea {
               background-color: black;  
               border-style: solid;
@@ -59,29 +35,14 @@
               border-radius: 2px;
           }
 
-          #textarea {position: relative; bottom: 150px;}
-
           #name, #email, #phone, select, #additional {margin-left: 20px;}
-
-          #no {margin-left: 105px;}
 
           select {
               width: 168px;
           }
 
-          #submit {padding: 5px 10px;}
 
-          .footer {
-              grid-area: footer;
-              font-family: sans-serif;
-              text-align: center;
-              padding: 1em 0;
-          }
-
-          hr {
-              border-color: rgb(247, 71, 7);
-          }
-        </style>
+    </style>
         <title>Restaurant Homepage</title>
     </head>
     <body>
@@ -112,10 +73,10 @@
                   <option value="Other">Other</option>
                 </select>
                 <br>
-                <span id="textarea">Additional Information:</span><textarea id="additional" name="additional-info" rows="10" cols="22"></textarea> 
+                <span id="textarea" style="position:relative; bottom:150px;">Additional Information:</span><textarea id="additional" name="additional-info" rows="10" cols="22"></textarea> 
                 <br>
                 <br>
-                Have you been here before?<input type="radio" name="been-here" id="no" value="no" checked/>No
+                Have you been here before?<input style="margin-left:105px;" type="radio" name="been-here" id="no" value="no" checked/>No
                 <input type="radio" id="yes" name="been-here" value="yes"/>Yes
                 <br>
                 <br>
@@ -126,7 +87,7 @@
                 <input type="checkbox" name="friday" id="friday" value="Friday">F 
                 <br>
                 <br>
-                <input type="submit" id="submit" name="submit" value="Send Request"/>
+                <input style="padding:5px 10px;"" type="submit" id="submit" name="submit" value="Send Request"/>
             </form>
         </div>
         <div class="footer">

@@ -1,0 +1,39 @@
+
+            @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
+            
+            * {
+              color: rgb(246, 129, 33);
+          }
+
+
+          .title {
+              grid-area: title;
+              font-size: 3em;
+              text-align: center;
+              padding-top: 1em;
+              position: relative;
+              font-family: 'Josefin Slab';
+          }
+
+          #home, #menu, #contact-us {
+              padding: 1em;
+          }
+
+          .header {
+              grid-area: header;
+              padding: 0 0 0 2em;
+              font-family: sans-serif;
+          }
+
+
+
+          .footer {
+              grid-area: footer;
+              font-family: sans-serif;
+              text-align: center;
+              padding: 1em 0;
+          }
+
+          hr {
+              border-color: rgb(247, 71, 7);
+          }

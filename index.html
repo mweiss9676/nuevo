@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+
         <style>
-
-            @import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway');
-
-
-          * {
-              color: rgb(246, 129, 33);
-          }
           .wrapper {
              display: grid;
              grid-gap: 10px;
@@ -23,33 +19,8 @@
             background-color: rgba(20, 15, 15, 1);
           }
 
-          .title {
-              grid-area: title;
-              font-size: 3em;
-              text-align: center;
-              padding-top: 1em;
-              position: relative;
-              bottom: ;
-              font-family: 'Josefin Slab';
-          }
-
-          #home, #menu, #contact-us {
-              padding: 1em;
-          }
-
-          .header {
-              grid-area: header;
-              padding: 0 0 0 2em;
-              font-family: sans-serif;
-          }
-
           .main-image {
               grid-area: image;
-          }
-
-          #main-image {
-              width: 600px;
-              height: 225px;
           }
 
           .about-paragraph {
@@ -59,7 +30,15 @@
               border-style: solid;
               margin-top: 3em;
               font-family: Raleway;
+              height: 25em;
+              overflow: auto;
           }
+
+          .about-paragraph::-webkit-scrollbar {width:15px;}
+              ::-webkit-scrollbar-track {background-color: rgba(127, 0, 0, 1);}
+              ::-webkit-scrollbar-button {background-color: rgba(204, 0, 0, 0.5);}
+              ::-webkit-scrollbar-thumb {background-color: rgba(246, 129, 33, 0.8);}
+              ::-webkit-scrollbar-corner {background-color: purple;}
 
           #nuevo {
               font-family: 'Josefin Slab';
@@ -70,22 +49,7 @@
           p {
               text-indent: 3em;
           }
-
-          .footer {
-              grid-area: footer;
-              font-family: sans-serif;
-              text-align: center;
-              padding: 1em 0;
-          }
-
-          hr {
-              border-color: rgb(247, 71, 7);
-          }
-
-
-          
-
-
+      
         </style>
         <title>Restaurant Homepage</title>
     </head>
@@ -106,7 +70,7 @@
             <br>
         </div>
         <div class="main-image">
-            <img src="nuevo-image2.jpg" id="main-image" alt="Nuevo Modern Mexican Restaurant Picture">
+            <img src="nuevo-image2.jpg" id="main-image" alt="Nuevo Modern Mexican Restaurant Picture" style="width:600px; height:225px;"/>
         </div>
         <div class="about-paragraph">
             <p><span id="nuevo"> Nuevo’s</span> mission is to be an exciting, casual and upscale Mexican restaurant,
