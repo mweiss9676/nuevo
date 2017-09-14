@@ -4,7 +4,6 @@
 
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
 
-        <title>Menu</title>
         <style>
 
           .wrapper {
@@ -16,6 +15,7 @@
                 "header header header"
                 "content1 content2 content3"
                 "content4 content5 content6"
+                "... beverages ..."
                 "footer footer footer";
                overflow: hidden; 
           }
@@ -52,7 +52,35 @@
               font-family: 'Josefin Slab';
           }
 
+          .beverages {
+              grid-area: beverages;
+          }
+
+          table {width: 100%;}
+
+          table, thead, tbody, th, td {
+              border-style: solid;
+              border-color:rgb(248, 158, 84);
+              border-collapse: collapse;
+          }
+
+          th {padding: 7px; font-family: 'Josefin Slab'; font-size: 1.5em; font-weight: normal;} 
+          
+          /* can't get nth child to work for some reason. I understand it now, all of those are 1st children!! th:nth-child(n+2) {color: purple;} */
+
+          .type-tequila-title {text-align: left; padding: 10px;}
+          #tequilas {font-size: 2em; padding-bottom: 25px; padding-top: 10px;}
+          td {padding: 2px 0px 1px 10px;}
+         
+          #anejo {background-image: linear-gradient(90deg, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 25%, #E99748);}
+          #blanco {background-image: linear-gradient(90deg, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 25%, #FCDCC2);}
+          #reposado {background-image: linear-gradient(90deg, rgba(1, 1, 1, 0), rgba(1, 1, 1, 0) 25%, #FAB985);}
+        /*colors I am using #E99748 #FCDCC2 #FAB985 rgb(246, 128, 32)*/
+        
+          
+
         </style>
+        <title>Menu</title>
     </head>
     <body>
         <div class="wrapper">
@@ -95,6 +123,87 @@
                     <div class="menu" id="Huitlacoche">
                             <div class="item">Huitlacoche Carne</div> <br> Achiote Crusted Sirloin, Honey Goat Cheese Yukon
                             Potatoes, Sherry Roasted Vegetables, Huitlacoche Butter <br> <br> 25.9
+                    </div>
+                    <div class="beverages">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="5" id="tequilas">Tequilas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <th class="type-tequila-title" colspan="5" id="blanco">Blanco</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">1800 Silver</td>
+                                    <td colspan="1">6</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Camarena Silver</td>
+                                    <td colspan="1">6</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">El Jimador Blanco</td>
+                                    <td colspan="1">6</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Riazul Plata</td>
+                                    <td colspan="1">8</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Cuervo Platino</td>
+                                    <td colspan="1">8</td>
+                                </tr>
+                                <tr>
+                                <tr>
+                                    <th colspan="5" class="type-tequila-title" id="reposado">Reposado</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Camarena Reposado</td>
+                                    <td colspan="1">6</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Blue Nectar Reposado</td>
+                                    <td colspan="1">8</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Tres Agaves Reposado</td>
+                                    <td colspan="1">8</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Avion Reposado</td>
+                                    <td colspan="1">9</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Tres Comas Reposado</td>
+                                    <td colspan="1">15</td>
+                                </tr>
+                                
+                                    <th colspan="5" class="type-tequila-title" id="anejo">Anejo</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">1800 Anejo</td>
+                                    <td colspan="1">7</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Cazadores Anejo</td>
+                                    <td colspan="1">8</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Don Julio 70th Anniversary</td>
+                                    <td colspan="1">13</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Gran Patron Burdeos</td>
+                                    <td colspan="1">33/Half</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4">Casa Noble Anejo</td>
+                                    <td colspan="1">11</td>
+                                </tr>
+                                <tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div class="footer">
                         <hr>
