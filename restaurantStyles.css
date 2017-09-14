@@ -3,8 +3,8 @@
             
             * {
               color: rgb(246, 129, 33);
+              background-color: rgba(40, 20, 20, 1);
           }
-
 
           .title {
               grid-area: title;
@@ -25,8 +25,6 @@
               font-family: sans-serif;
           }
 
-
-
           .footer {
               grid-area: footer;
               font-family: sans-serif;
@@ -37,3 +35,5 @@
           hr {
               border-color: rgb(247, 71, 7);
           }
+
+          a {z-index: 10;}
