@@ -21,14 +21,21 @@
           }
 
           .menu, .item{
-              padding: 2em;
+              padding: 1em 2em;
               text-align: center;
-              padding-top: 0;
               font-family: Raleway;
               background-color: rgba(0, 0, 0, 0);
               background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
               background-size: 100%;
           }
+          
+          .item {
+              font-size: 2em;
+              font-style: bold;
+              font-family: 'Josefin Slab';
+              padding-bottom: 0px;
+          }
+
           /*experimenting with different notation below to see if it would work. It didn't... */
           /*#Cazuela, #Puerco, #Gallo, #Salmon, #Vieiras, #Huitlacoche {
               grid-area: content5, content2, content3, content4, content1, content6;
@@ -46,20 +53,14 @@
 
           #Huitlacoche {grid-area: content6;}
 
-          #Cazuela, #Salmon {margin-left: 10em;}
-          #Gallo, #Huitlacoche {margin-right: 10em;}
-
-          .item {
-              font-size: 2em;
-              font-style: bold;
-              font-family: 'Josefin Slab';
-          }
+          #Cazuela, #Salmon {margin-left: 33%;}
+          #Gallo, #Huitlacoche {margin-right: 33%;}
 
           .beverages {
               grid-area: beverages;
           }
 
-          table {width: 100%;}
+          table {width: 100%; margin-top: 15%;}
 
           table, thead, tbody, th, td {
               border-style: solid;
@@ -139,7 +140,9 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <th class="type-tequila-title" colspan="5" id="blanco">Blanco</th>
+                                <tr>
+                                <th class="type-tequila-title" colspan="4" id="blanco">Blanco</th>
+                                <th id="color" colspan=></th>
                                 </tr>
                                 <tr>
                                     <td colspan="4">1800 Silver</td>
