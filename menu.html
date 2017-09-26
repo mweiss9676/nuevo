@@ -3,10 +3,22 @@
     <head>
 
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
+        
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+                        <!-- jQuery library -->
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                
+                        <!-- Latest compiled JavaScript -->
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                
+                        <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
+                
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
 
-          .wrapper {
+          /*.wrapper {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr;
               grid-gap: 10px;
@@ -18,10 +30,10 @@
                 "... beverages ..."
                 "footer footer footer";
                overflow: hidden; 
-          }
+          }*/
 
           .menu, .item{
-              padding: 1em 2em;
+              padding: 1em 0;
               text-align: center;
               font-family: Raleway;
               background-color: rgba(0, 0, 0, 0);
@@ -41,7 +53,7 @@
               grid-area: content5, content2, content3, content4, content1, content6;
           }*/
 
-          #Cazuela {grid-area: content1;}
+          /*#Cazuela {grid-area: content1;}
 
           #Puerco {grid-area: content2;}
 
@@ -51,14 +63,14 @@
 
           #Vieiras {grid-area: content5;}
 
-          #Huitlacoche {grid-area: content6;}
+          #Huitlacoche {grid-area: content6;}*/
 
-          #Cazuela, #Salmon {margin-left: 33%;}
-          #Gallo, #Huitlacoche {margin-right: 33%;}
+          /*#Cazuela, #Salmon {margin-left: 33%;}
+          #Gallo, #Huitlacoche {margin-right: 33%;}*/
 
-          .beverages {
+          /*.beverages {
               grid-area: beverages;
-          }
+          }*/
 
           table {width: 100%; margin-top: 15%;}
 
@@ -91,10 +103,16 @@
         <title>Menu</title>
     </head>
     <body>
-        <div class="wrapper">
+    <div class="container-fluid">
+        <div class="row">
+              <div class="col-sm-12">
                 <div class="title">
                         Nuevo Modern Mexican
                     </div>
+              </div>      
+        </div>      
+        <div class="row">
+                <div class="col-sm-12">
                     <div class="header">
                         <hr>
                         <br>
@@ -106,32 +124,61 @@
                         <hr>
                         <br>
                     </div>
+                </div>
+        </div>        
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
                     <div class="menu" id="Cazuela">
                         <div class="item">Cazuela</div><br> Verde Arborio, English Peas, Roasted Corn, Scallions,
                         Zucchini Ribbons, Tomato Chipotle Broth <br> <br> 19.9
                     </div>
+                </div>
+                <div class="col-sm-1"></div>  
+                <div class="col-sm-2"> 
                     <div class="menu" id="Puerco">
                             <div class="item">Puerco</div><br> Tomahwak Pork Chop, Chorizo Cornbread Dressing, Braised
                         Kale, Pomegranate BBQ <br> <br> 23.9
                     </div>
+                </div>
+                <div class="col-sm-1"></div>   
+                <div class="col-sm-2"> 
                     <div class="menu" id="Gallo">
                             <div class="item">Gallo Rojo</div> <br> Pan-Roasted Poulet Rouge Chicken,
                         Savory Pain Perdu, Zucchini and Carrot Ribbons,
                         Chipotle Maple Pan Gravy <br> <br> 24.9
                     </div>
+                </div>
+                <div class="col-sm-2"></div>
+        </div>        
+        <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-2">
                     <div class="menu" id="Salmon">
                             <div class="item">Salmon En Hoja</div> <br> Corn Husk Steamed Faroe Island Salmon, Papas
                             Bravas, Pickled Cauliflower, Avocado Puree, Garlic Citrus <br> <br>
                             23.9
                     </div>
+                </div>
+                <div class="col-sm-1"></div>  
+                <div class="col-sm-2">
                     <div class="menu" id="Vieiras">
                             <div class="item">Vieiras </div><br> Pan-Seared Scallops, Pork Belly Succotash, Romesco,
                             Puffed Rice <br> <br> 26.9
                     </div>
+                </div>  
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">  
                     <div class="menu" id="Huitlacoche">
                             <div class="item">Huitlacoche Carne</div> <br> Achiote Crusted Sirloin, Honey Goat Cheese Yukon
                             Potatoes, Sherry Roasted Vegetables, Huitlacoche Butter <br> <br> 25.9
                     </div>
+                </div>
+                <div class="col-sm-2"></div>    
+        </div>   
+        <div class="row"> 
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
                     <div class="beverages">
                         <table>
                             <thead>
@@ -214,6 +261,11 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+                <div class="col-sm-4"></div>    
+        </div> 
+        <div class="row">  
+                    <div class="col-sm-12">
                     <div class="footer">
                         <hr>
                         <br>
@@ -221,6 +273,8 @@
                         <br><br>
                         330-762-8000     
                     </div>
-        </div>
+                    </div>
+        </div>    
+    </div>
     </body>
 </html>

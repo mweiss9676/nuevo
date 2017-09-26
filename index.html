@@ -2,11 +2,22 @@
 <html>
     <head>
 
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <style>    
 
-          .wrapper {
+          /*.wrapper {
              display: grid;
              grid-gap: 10px;
              grid-template-columns: 1fr 1fr 1fr;
@@ -18,7 +29,7 @@
                 "footer footer footer";
              overflow: hidden; 
              position: relative;  
-            }
+            }*/
 
             /*.wrapper:after {
                 content: ' ';
@@ -34,21 +45,25 @@
                 opacity: 0.15;
             }*/
 
-          .main-image {
+          /*.main-image {
               grid-area: image;
 
-          }
+          }*/ 
 
-          img {z-index: 100;}
+          /**{border-style: dotted;}*/
+
+          * {overflow-x: hidden;}
+          
+          img {z-index: 100; width: 100%;}
 
           .about-paragraph {
-              grid-area: about;
+              /*grid-area: about;*/
               padding: 1em 9em 5em 9em;
               font-family: sans-serif;
               border-style: solid;
               margin-top: 3em;
               font-family: Raleway;
-              height: 15em;
+              height: 25em;
               overflow: auto;
               z-index: 5;
               background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
@@ -60,7 +75,6 @@
               ::-webkit-scrollbar-track {background-color: rgba(127, 0, 0, 1);}
               ::-webkit-scrollbar-button {background-color: rgba(204, 0, 0, 0.5);}
               ::-webkit-scrollbar-thumb {background-color: rgba(246, 129, 33, 0.8);}
-              ::-webkit-scrollbar-corner {background-color: purple;}
 
           #nuevo {
               font-family: 'Josefin Slab';
@@ -76,58 +90,82 @@
         <title>Restaurant Homepage</title>
     </head>
     <body>
-        <div class="wrapper">
-        <div class="title">
-            Nuevo Modern Mexican
+        <div class="container-fluid"></div>
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="title">
+                    Nuevo Modern Mexican
+                </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12">
+                <div class="header">
+                    <hr>
+                    <br>
+                    <a href="#" id="home">Home</a>
+                    <a href="menu.html" id="menu">Menu</a>
+                    <a href="contact.html" id="contact-us">Contact Us</a>
+                    <br>
+                    <br>
+                    <hr>
+                    <br>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                    <div class="main-image">
+                        <img src="nuevo-image2.jpg" id="main-image" alt="Nuevo Modern Mexican Restaurant Picture"/>
+                    </div>
+              </div>
+              <div class="col-sm-3"></div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <div class="about-paragraph">
+                    <p><span id="nuevo"> Nuevo’s</span> mission is to be an exciting, casual and upscale Mexican restaurant,
+                        one like Akron has never seen before. The unique features of the space lend 
+                        themselves well to our design concept. Artfully designed windows flood the 
+                        space with natural light, making the atmosphere dynamic enough to be a destination
+                        for a party of 30, or comfortable enough for a lone diner to enjoy. Our staff
+                        is trained to provide top-notch service and to ensure that every customer feels
+                            welcome and eager to return.
+                    </p>
+                    <p>      
+                    Nuevo is rooted in the traditional, using several modern ingredients and techniques
+                            to create a whole new cuisine. The restaurant includes a tequila bar with a variety
+                            of artisanal tequilas, as well as fresh, handcrafted drinks. Our extensive tequila
+                            selections are paired with complementary food courses to create for an
+                                unforgettable experience. Nuevo also offers a variety of wines, chosen to
+                                complement our cuisine, and an extraordinary beer selection, which includes
+                                our proprietary Nuevo black lager, and many other Mexican and domestic options.
+                    </p>
+                    <p>
+                            We feature a downstairs lounge and private meeting area for large parties or groups.
+                            Our outdoor patio space, modeled as an authentic Mexican plaza, makes it the most
+                            exciting outdoor dining experience in Akron. Parking is never an issue since
+                            the building is attached to a parking deck. Valet is offered at our main
+                                entrance in the evening. In addition, there are two more parking decks
+                                within one block, and the Akron Skywalk.
+                    </p>
+                </div>
+              </div>
+              <div class="col-sm-3"></div>  
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="footer">
+                    <hr>
+                    <br>
+                    54 E Mill St <br> Akron OH 44308
+                    <br><br>
+                    330-762-8000
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="header">
-            <hr>
-            <br>
-              <a href="#" id="home">Home</a>
-              <a href="menu.html" id="menu">Menu</a>
-              <a href="contact.html" id="contact-us">Contact Us</a>
-            <br>
-            <br>
-            <hr>
-            <br>
-        </div>
-        <div class="main-image">
-            <img src="nuevo-image2.jpg" id="main-image" alt="Nuevo Modern Mexican Restaurant Picture" style="width:600px; height:225px;"/>
-        </div>
-        <div class="about-paragraph">
-            <p><span id="nuevo"> Nuevo’s</span> mission is to be an exciting, casual and upscale Mexican restaurant,
-                 one like Akron has never seen before. The unique features of the space lend 
-                 themselves well to our design concept. Artfully designed windows flood the 
-                 space with natural light, making the atmosphere dynamic enough to be a destination
-                  for a party of 30, or comfortable enough for a lone diner to enjoy. Our staff
-                   is trained to provide top-notch service and to ensure that every customer feels
-                    welcome and eager to return.
-            </p>
-            <p>      
-            Nuevo is rooted in the traditional, using several modern ingredients and techniques
-                     to create a whole new cuisine. The restaurant includes a tequila bar with a variety
-                      of artisanal tequilas, as well as fresh, handcrafted drinks. Our extensive tequila
-                       selections are paired with complementary food courses to create for an
-                        unforgettable experience. Nuevo also offers a variety of wines, chosen to
-                         complement our cuisine, and an extraordinary beer selection, which includes
-                          our proprietary Nuevo black lager, and many other Mexican and domestic options.
-            </p>
-            <p>
-                    We feature a downstairs lounge and private meeting area for large parties or groups.
-                     Our outdoor patio space, modeled as an authentic Mexican plaza, makes it the most
-                      exciting outdoor dining experience in Akron. Parking is never an issue since
-                       the building is attached to a parking deck. Valet is offered at our main
-                        entrance in the evening. In addition, there are two more parking decks
-                         within one block, and the Akron Skywalk.
-            </p>
-        </div>
-        <div class="footer">
-            <hr>
-            <br>
-            54 E Mill St <br> Akron OH 44308
-            <br><br>
-            330-762-8000
-        </div>
-    </div>
     </body>
 </html>
