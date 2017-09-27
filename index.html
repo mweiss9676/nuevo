@@ -17,57 +17,27 @@
         
         <style>    
 
-          /*.wrapper {
-             display: grid;
-             grid-gap: 10px;
-             grid-template-columns: 1fr 1fr 1fr;
-             grid-template-areas: 
-                "title title title"
-                "header header header"
-                "... image ..."
-                "... about ..."
-                "footer footer footer";
-             overflow: hidden; 
-             position: relative;  
-            }*/
-
-            /*.wrapper:after {
-                content: ' ';
-                display: block;
-                position: absolute;
-                left:0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url(pepper.png);
-                background-size: 80px;
-                background-repeat: repeat;
-                opacity: 0.15;
-            }*/
-
-          /*.main-image {
-              grid-area: image;
-
-          }*/ 
-
-          /**{border-style: dotted;}*/
-
-          * {overflow-x: hidden;}
           
           img {z-index: 100; width: 100%;}
 
+          .main-image {margin-bottom: 7%;}
+
           .about-paragraph {
-              /*grid-area: about;*/
-              padding: 1em 9em 5em 9em;
+              /*grid-area: about;
+              margin-top: 3em;*/
+              padding: 1% 7% 4% 7%;
               font-family: sans-serif;
               border-style: solid;
-              margin-top: 3em;
               font-family: Raleway;
               height: 25em;
               overflow: auto;
               z-index: 5;
               background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
           }
+
+          /*@media only screen and (max-width: 320px) {
+              .about-paragraph {padding: 1em 1em 5em 1em;}
+          }*/
 
           p, #nuevo {background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));}
 
@@ -85,34 +55,49 @@
           p {
               text-indent: 3em;
           }
+
+          .jumbotron {
+              font-size: 300%; 
+              font-family: "Josefin Slab"; 
+              text-align: center; 
+              background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
+              border: 1px solid rgb(246, 128, 32);
+            }
       
         </style>
         <title>Restaurant Homepage</title>
     </head>
     <body>
-        <div class="container-fluid"></div>
-          <div class="row">
-            <div class="col-sm-12">
-                <div class="title">
+       <div class="container-fluid">
+        <!--<div class="wrapper">-->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title">
                     Nuevo Modern Mexican
+                    </div>
                 </div>
-            </div>
-          </div>
-          <div class="row">
-              <div class="col-sm-12">
-                <div class="header">
-                    <hr>
-                    <br>
-                    <a href="#" id="home">Home</a>
-                    <a href="menu.html" id="menu">Menu</a>
-                    <a href="contact.html" id="contact-us">Contact Us</a>
-                    <br>
-                    <br>
-                    <hr>
-                    <br>
-                </div>
+            </div>  
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="header">
+                            <hr>
+                            <br>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="index.html" id="home" class="glyphicon glyphicon-home"></a></li>
+                                    <li><a href="menu.html" id="menu">Menu</a></li>
+                                    <li><a href="contact.html" id="contact-us">Contact Us</a></li>
+                                </ul>
+                            <br>
+                            <br>
+                            <br>
+                    </div>
               </div>
           </div>
+          <div class="row">
+              <div class="col-sm-4"></div>
+              <div class="col-sm-4 jumbotron">Now Open Downtown Akron!</div>
+              <div class="col-sm-4"></div>              
+          </div>    
           <div class="row">
               <div class="col-sm-3"></div>
               <div class="col-sm-6">
@@ -124,8 +109,7 @@
           </div>
           <div class="row">
               <div class="col-sm-3"></div>
-              <div class="col-sm-6">
-                <div class="about-paragraph">
+              <div class="col-sm-6 about-paragraph mb-3">
                     <p><span id="nuevo"> Nuevo’s</span> mission is to be an exciting, casual and upscale Mexican restaurant,
                         one like Akron has never seen before. The unique features of the space lend 
                         themselves well to our design concept. Artfully designed windows flood the 
@@ -151,21 +135,20 @@
                                 entrance in the evening. In addition, there are two more parking decks
                                 within one block, and the Akron Skywalk.
                     </p>
-                </div>
               </div>
               <div class="col-sm-3"></div>  
             </div>
             <div class="row">
-              <div class="col-sm-12">
-                <div class="footer">
-                    <hr>
-                    <br>
-                    54 E Mill St <br> Akron OH 44308
-                    <br><br>
-                    330-762-8000
-                </div>
-              </div>
-            </div>
+                    <div class="col-sm-12">
+                        <div class="footer">
+                            <hr>
+                            <br>
+                            54 E Mill St <br> Akron OH 44308
+                            <br><br>
+                            330-762-8000
+                        </div>
+                    </div>   
+                </div> 
         </div>
     </body>
 </html>
