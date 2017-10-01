@@ -2,6 +2,15 @@
 <html>
     <head>
 
+        <noscript>
+            <style type="text/css">
+                .pagecontainer {display:none;}
+            </style>
+                <div class="noscriptmsg">
+                 <h1> JavaScript is not enabled on your browser. Follow <a href="https://www.javascript.com/">this link</a> to learn more.</h1>
+                </div>
+        </noscript>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -9,18 +18,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- Latest compiled JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>        
 
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <style>    
+        <style> 
 
-          
-          img {z-index: 100; width: 100%;}
-
-          .main-image {margin-bottom: 7%;}
+          .main-image > img {
+              max-width: 100%;
+              margin: 5% auto 7% auto;
+              display: none;
+          }  
 
           .about-paragraph {
               /*grid-area: about;
@@ -33,6 +43,7 @@
               overflow: auto;
               z-index: 5;
               background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
+              margin-top: 7%;
           }
 
           /*@media only screen and (max-width: 320px) {
@@ -62,7 +73,24 @@
               text-align: center; 
               background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
               border: 1px solid rgb(246, 128, 32);
+              display: none;
             }
+
+            .carousel-inner > .item > img {
+                margin: 0 auto;
+                height: 400px;               
+                max-width: 700px;
+            }
+
+            .carousel-caption, .carousel-caption > h3, .carousel-indicators {
+                background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));
+            }
+
+            #myCarousel {
+                max-width: 500px;
+            }
+
+
       
         </style>
         <title>Restaurant Homepage</title>
@@ -94,16 +122,60 @@
               </div>
           </div>
           <div class="row">
+              <div class="col-sm-12">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 700px; margin: 0 auto;">
+                      
+                      <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="item active">
+                                <img src="nuevo-image2.jpg" alt="Our exciting new location in Cleveland!"/>
+                                <div class="carousel-caption">
+                                    <h3 class="silly">Open in Cleveland!</h3>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                    <img src="tacos.jpg" alt="Our new dish!">
+                                    <div class="carousel-caption">
+                                        <h3>Our new Fall menu!</h3>
+                                    </div>
+                            </div>
+
+                            <div class="item">
+                                    <img src="sg-drink.jpg" alt="Our new software-guild drink!">
+                                    <div class="carousel-caption">
+                                        <h3>Try our SG-cocktail!</h3>
+                                    </div>
+                            </div>
+
+                        </div>
+
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+             </div>
+          </div>
+          <!--<div class="row">
               <div class="col-sm-4"></div>
               <div class="col-sm-4 jumbotron">Now Open Downtown Akron!</div>
               <div class="col-sm-4"></div>              
-          </div>    
+          </div>  -->  
           <div class="row">
               <div class="col-sm-3"></div>
-              <div class="col-sm-6">
-                    <div class="main-image">
+              <div class="col-sm-6 main-image mb-3">
                         <img src="nuevo-image2.jpg" id="main-image" alt="Nuevo Modern Mexican Restaurant Picture"/>
-                    </div>
               </div>
               <div class="col-sm-3"></div>
           </div>

@@ -37,9 +37,10 @@
               border-top-color: rgb(247, 71, 7) !important; 
               border-right-color: rgb(247, 71, 7) !important;
               border-left-color: rgb(247, 71, 7) !important;
+              background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20)) !important;
             }
 
-         .nav {border-color:  rgb(247, 71, 7);}
+         .nav {border-color:  rgb(247, 71, 7); background-image: linear-gradient(90deg, rgb(40, 20, 20), rgb(40, 20, 20));}
        
           .header {
               /*grid-area: header;*/
