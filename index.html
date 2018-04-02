@@ -3,7 +3,7 @@
     <head>
 
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
-
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Quattrocento" rel="stylesheet">
         <style>    
 
           .wrapper {
@@ -20,34 +20,20 @@
              position: relative;
             }
 
-            /*.wrapper:after {
-                content: ' ';
-                display: block;
-                position: absolute;
-                left:0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                background-image: url(pepper.png);
-                background-size: 80px;
-                background-repeat: repeat;
-                opacity: 0.15;
-            }*/
-
           .main-image {
               grid-area: image;
-
           }
 
           img {z-index: 100;}
 
           .about-paragraph {
               grid-area: about;
-              padding: 1em 9em 5em 9em;
+              padding: 1rem 4rem 5rem 4rem;
               font-family: sans-serif;
               border-style: solid;
               margin-top: 3em;
-              font-family: Raleway;
+              font-family: "Quattrocento", sans-serif;
+              text-align: justify;
               height: 15em;
               overflow: auto;
               z-index: 5;
@@ -63,13 +49,11 @@
               ::-webkit-scrollbar-corner {background-color: purple;}
 
           #nuevo {
-              font-family: 'Josefin Slab';
+              font-family: "Cinzel", serif;
               font-size: 3em;
               font-stretch: 2em;
-          }
-
-          p {
-              text-indent: 3em;
+              float: left;
+              padding: 0 .5rem;
           }
       
         </style>

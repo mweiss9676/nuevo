@@ -3,25 +3,28 @@
     <head>
 
         <link rel="stylesheet" href="restaurantStyles.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Quattrocento" rel="stylesheet">
+
 
         <style>
 
           .wrapper {
               display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-columns: 33% 33% 33%;
+              grid-template-rows: 1fr;
               grid-gap: 10px;
               grid-template-areas: 
                 "title title title"
                 "header header header"
                 "content1 content2 content3"
                 "content4 content5 content6"
-                "... beverages ..."
+                ". beverages ."
                 "footer footer footer";
                overflow: hidden; 
           }
 
           .menu, .item{
-              padding: 1em 2em;
+              padding:0 1rem;
               text-align: center;
               font-family: Raleway;
               background-color: rgba(0, 0, 0, 0);
@@ -32,7 +35,7 @@
           .item {
               font-size: 2em;
               font-style: bold;
-              font-family: 'Josefin Slab';
+              font-family: 'Cinzel';
               padding-bottom: 0px;
           }
 
@@ -58,6 +61,7 @@
 
           .beverages {
               grid-area: beverages;
+              font-family: "Quattrocento", sans-serif;
           }
 
           table {width: 100%; margin-top: 15%;}
@@ -71,10 +75,9 @@
               z-index: 200;
           }
 
-          th {padding: 7px; font-family: 'Josefin Slab'; font-size: 1.5em; font-weight: normal;}
+          th {padding: 7px; font-family: 'Cinzel'; font-size: 1.5em; font-weight: normal;}
           td {font-family: Raleway, sans-serif;} 
           
-          /* can't get nth child to work for some reason. I understand it now, all of those are 1st children!! th:nth-child(n+2) {color: purple;} */
 
           .type-tequila-title {text-align: left; padding: 10px;}
           #tequilas {font-size: 2em; padding-bottom: 25px; padding-top: 10px;}
